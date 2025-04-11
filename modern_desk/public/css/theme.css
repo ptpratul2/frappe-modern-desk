@@ -234,3 +234,14 @@
 [data-theme=modern_ui_theme] #page-Workspaces .page-head{
     background: var(--widget-bg);
 }
+
+
+/* hiding_onboarding banner */
+
+[data-theme=modern_ui_theme] .widget.onboarding-widget-box .widget-body {
+    display: none;
+}
+
+[data-theme=modern_ui_theme] .widget.onboarding-widget-box {
+    display: none;
+}
