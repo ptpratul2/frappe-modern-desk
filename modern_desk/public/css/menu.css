@@ -29,14 +29,14 @@
 
 .widget-title .widget-title-text {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700; /* Increased from 600 for clarity */
     color: var(--main-color);
     font-size: 0.875rem;
     transition: color 0.2s ease;
 }
 
 .widget.menu-widget:hover .widget-title .widget-title-text {
-    color: var(--main-color);
+    color: var(--main-color); /* Stays #2D3748 */
 }
 
 .menu-open-btn {
