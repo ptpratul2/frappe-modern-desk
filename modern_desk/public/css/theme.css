@@ -1,11 +1,11 @@
 /* Define root variables for minimalist palette */
 :root {
-    --main-color: #6f7378;    /* Dark slate gray for primary elements */
-    --second-color: #A0AEC0;  /* Soft gray-blue for accents */
-    --widget-bg: #F7FAFC;     /* Light gray-white for backgrounds */
-    --third-color: #FFFFFF;   /* White for text and highlights */
-    --border-color: #E2E8F0;  /* Subtle gray for borders */
-    --shadow: 0 2px 6px rgba(0, 0, 0, 0.06); /* Reduced shadow */
+    --main-color: #4A5568;    /* Darker gray for clarity (was #6f7378) */
+    --second-color: #718096;  /* Darker gray-blue for accents (was #A0AEC0) */
+    --widget-bg: #F7FAFC;     /* Light gray-white */
+    --third-color: #FFFFFF;   /* White */
+    --border-color: #E2E8F0;  /* Subtle gray */
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 /* Base theme styles */
@@ -46,7 +46,7 @@
 
 [data-theme=modern_ui_theme] a {
     color: var(--main-color);
-    font-weight: 500;
+    font-weight: 600; /* Increased from 500 */
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -60,8 +60,8 @@
 }
 
 [data-theme=modern_ui_theme] .h6.uppercase, h6.uppercase {
-    font-weight: 600;
-    font-size: 0.75rem;
+    font-weight: 700; /* Increased from 600 */
+    font-size: 0.875rem; /* Increased from 0.75rem */
     letter-spacing: 0.08em;
     color: var(--second-color);
 }
@@ -78,7 +78,7 @@
 [data-theme=modern_ui_theme] .navbar-nav > li > a,
 [data-theme=modern_ui_theme] .navbar-brand {
     color: var(--third-color) !important;
-    font-weight: 500;
+    font-weight: 600; /* Increased from 500 */
     padding: 8px 12px;
     transition: color 0.2s ease, background-color 0.2s ease;
 }
@@ -121,16 +121,9 @@
 
 [data-theme=modern_ui_theme] .desk-sidebar .desk-sidebar-item {
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 600; /* Increased from 500 */
     color: var(--main-color);
     padding: 8px 12px;
-}
-
-[data-theme=modern_ui_theme] .layout-side-section {
-    font-size: 0.875rem;
-    background-color: var(--widget-bg);
-    padding: 16px;
-    border-right: 1px solid var(--border-color);
 }
 
 /* Widgets */
@@ -143,7 +136,6 @@
     width: 100%;
     box-sizing: border-box;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-
 }
 
 [data-theme=modern_ui_theme] .widget:hover {
@@ -151,19 +143,26 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Chart container for default size */
+/* Chart container */
 [data-theme=modern_ui_theme] .chart-container {
-    width: 100%; /* Full width of .widget */
-    height: auto; /* Allow chart to set its own height */
-    min-height: 200px; /* Minimum height for visibility */
-    position: relative; /* For chart positioning */
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    position: relative;
 }
 
 [data-theme=modern_ui_theme] .widget .chart-container canvas {
-    width: 100% !important; /* Ensure canvas fills container */
-    height: auto !important; /* Let chart library set height */
+    width: 100% !important;
+    height: auto !important;
 }
 
+[data-theme=modern_ui_theme] .widget .widget-head .widget-title {
+    font-size: 1rem;
+    color: var(--main-color);
+    font-weight: 600; /* Increased from 500 */
+}
+
+/* Rest of the CSS remains unchanged */
 [data-theme=modern_ui_theme] .widget.shortcut-widget-box .widget-head .widget-title i {
     color: var(--second-color);
     font-size: 1rem;
@@ -196,7 +195,7 @@
 [data-theme=modern_ui_theme] .dropdown-menu > li > a {
     font-size: 0.875rem;
     color: var(--main-color);
-    font-weight: 500;
+    font-weight: 600; /* Increased from 500 */
     padding: 8px 16px;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -241,12 +240,11 @@
     letter-spacing: -0.02em;
 }
 
-[data-theme=modern_ui_theme] .widget .widget-head .widget-title,
 [data-theme=modern_ui_theme] .section-head,
 [data-theme=modern_ui_theme] .comment-input-header {
     font-size: 1rem;
     color: var(--main-color);
-    font-weight: 500;
+    font-weight: 600; /* Increased from 500 */
 }
 
 /* Main Section */
@@ -254,7 +252,7 @@
     background-color: var(--widget-bg);
     border-bottom: 1px solid var(--border-color);
     padding: 12px;
-    font-weight: 500;
+    font-weight: 600; /* Increased from 500 */
 }
 
 [data-theme=modern_ui_theme] .list-row {
@@ -267,7 +265,7 @@
 
 /* Buttons */
 [data-theme=modern_ui_theme] .btn {
-    font-weight: 500;
+    font-weight: 600; /* Increased from 500 */
     padding: 8px 16px;
     border-radius: 6px;
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
@@ -431,7 +429,7 @@
     padding: 4px 8px;
     border-radius: 12px;
     font-size: 0.75rem;
-    font-weight: 500;
+    font-weight: 600; /* Increased from 500 */
     transition: background-color 0.2s ease;
 }
 
