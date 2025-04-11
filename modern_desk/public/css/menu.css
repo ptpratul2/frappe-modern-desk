@@ -1,26 +1,49 @@
-.no-click{
-    cursor:default !important;
+.no-click {
+    cursor: default !important;
 }
 
-.hide-side-section{
+.hide-side-section {
     display: none !important;
 }
 
-.widget.menu-widget{
-    background-color: #d4daf9;
-    margin: 20px;
+.widget.menu-widget {
+    background-color: var(--third-color);
+    margin: 12px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 8px;
+    max-width: 280px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.widget-title .widget-title-text{
-    text-decoration: underline;
-    font-weight: 800;
+.widget.menu-widget:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.menu-widget:hover .widget-title .widget-title-text {
-    color: var(--gray-100);
+.widget-title .widget-title-text {
     text-decoration: none;
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
 }
 
-.menu-open-btn{
-    margin-right: var(--margin-sm);
+.widget.menu-widget:hover .widget-title .widget-title-text {
+    color: var(--main-color);
+}
+
+.menu-open-btn {
+    margin-right: 8px;
+}
+
+/* Hide only the Help button */
+button.btn-reset.nav-link[aria-label="Help Dropdown"] {
+    display: none !important;
 }
