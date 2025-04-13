@@ -1,7 +1,7 @@
 [project]
 name = "modern_desk"
 authors = [
-    { name = "Pratheesh Russell", email = "pratheeshrussell@gmail.com"}
+    { name = "Pratul Tripathi", email = "ptpratul2@gmail.com"}
 ]
 description = "A modern UI for frappe desk"
 requires-python = ">=3.10"
