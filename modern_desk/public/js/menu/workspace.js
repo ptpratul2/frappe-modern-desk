@@ -48,3 +48,92 @@ frappe.views.Workspace = class CustomWorkspace extends frappe.views.Workspace {
         super.show();
     }
 }
+
+// frappe.views.Workspace = class CustomWorkspace extends frappe.views.Workspace {
+//     constructor(wrapper) {
+//         super(wrapper);
+//     }
+//     show() {
+//         // Always show the side bar and the sidebar toggle button
+//         let sideBarElements = document.querySelectorAll('.layout-side-section');
+//         sideBarElements.forEach(element => {
+//             if (element) element.classList.remove('hide-side-section');
+//         });
+
+//         let toggleButtonElements = document.querySelectorAll('.sidebar-toggle-btn');
+//         toggleButtonElements.forEach(element => {
+//             if (element) element.classList.remove('hide-side-section');
+//         });
+
+//         // The menu-open-btn is specifically for navigating to the modern-menu.
+//         // You can choose to always hide it if the sidebar is always visible
+//         // or keep it conditionally visible based on your needs.
+//         // For this scenario, let's assume you want it hidden when the sidebar is always present.
+//         let menuOpenButtonElements = document.querySelectorAll('.menu-open-btn');
+//         menuOpenButtonElements.forEach(element => {
+//             if (element) element.classList.add('hide-side-section');
+//         });
+
+//         // If you want the menu button to still appear specifically on the 'modern-menu' page,
+//         // you would add a condition here. For now, it's globally hidden.
+
+//         // call the parent's show
+//         super.show();
+//     }
+// }
+
+
+// frappe.views.Workspace = class CustomWorkspace extends frappe.views.Workspace {
+//     constructor(wrapper) {
+//         super(wrapper);
+//         this.setupSidebarVisibilityOnRouteChange();
+//     }
+//     setupSidebarVisibilityOnRouteChange() {
+//         frappe.after_route_change = () => {
+//             this.updateSidebarVisibility();
+//         };
+//     }
+
+ 
+//     updateSidebarVisibility() {
+//         const currentRoute = frappe.router?.current_route;
+//         const shouldHideSidebar = currentRoute && currentRoute.length > 1 && currentRoute[1] === "modern-menu";
+//         let sideBarElements = document.querySelectorAll('.layout-side-section');
+//         let toggleButtonElements = document.querySelectorAll('.sidebar-toggle-btn');
+//         let menuOpenButtonElements = document.querySelectorAll('.menu-open-btn');
+//         sideBarElements.forEach(element => {
+//             if (element) {
+//                 if (shouldHideSidebar) {
+//                     element.classList.add('hide-side-section');
+//                 } else {
+//                     element.classList.remove('hide-side-section');
+//                 }
+//             }
+//         });
+
+//         toggleButtonElements.forEach(element => {
+//             if (element) {
+//                 if (shouldHideSidebar) {
+//                     element.classList.add('hide-side-section');
+//                 } else {
+//                     element.classList.remove('hide-side-section');
+//                 }
+//             }
+//         });
+
+//         menuOpenButtonElements.forEach(element => {
+//             if (element) {
+//                 if (shouldHideSidebar) {
+//                     element.classList.remove('hide-side-section'); 
+//                 } else {
+//                     element.classList.add('hide-side-section'); 
+//                 }
+//             }
+//         });
+//     }
+
+//     show() {
+//         super.show();
+//         this.updateSidebarVisibility();
+//     }
+// }

@@ -6,3 +6,4 @@ frappe.router.render = function () {
         frappe.set_route(['app', 'modern-menu']);
     }
 }
+

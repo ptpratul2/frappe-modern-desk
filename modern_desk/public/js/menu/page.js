@@ -109,3 +109,4 @@ frappe.ui.Page = class CustomPage extends frappe.ui.Page{
 		});
 	}
 }
+
