@@ -372,7 +372,7 @@ use.like-icon {
     font-weight: 400;
     line-height: 1.5;
     color: white;
-    background-color: #1e293b !important;
+    background-color: #0f172a !important;
     background-clip: padding-box;
     border: 1px solid #1e293b !important;
     border-radius: var(--border-radius);
@@ -968,6 +968,23 @@ default-state .empty-state[data-v-be90f500] {
     padding: 10px 15px;
     text-align: center;
     color: white;
+}
+.dropdown-divider, .dropdown-menu .divider {
+    height: 0;
+    margin: 4px 0;
+    overflow: hidden;
+    border-top: 1px dashed #1e293b;
+}
+.file-upload-area[data-v-8673c2f5] {
+    min-height: 16rem;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #1e293b !important;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color:#1e293b !important;
 }
 @media (max-width: 991px) {
     .layout-side-section .overlay-sidebar {
