@@ -192,7 +192,7 @@ div#driver-popover-item .driver-popover-footer button.driver-close-btn {
 }
 
 .form-column:not(:last-child) {
-    border-bottom: 1px solid #0f172a;
+    border-bottom: 1px solid #1e293b;
 }
 
 h1,
@@ -501,9 +501,10 @@ use.like-icon {
 }
 
 .form-section.card-section, .form-dashboard-section {
-    border-bottom: 1px solid #0f172a;
+    border-bottom: 1px dashed #1e293b;
     padding: var(--padding-xs);
     background-color: #1e293b !important;
+    padding-left: 20px;
 }
 .form-links .document-link .document-link-badge, .form-links .document-link .report-link-badge {
     font-size: var(--text-sm);
@@ -835,13 +836,16 @@ report-summary .summary-value {
 }
 .btn:not(.btn-md):not(.btn-lg), div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg) {
     padding: 4px 8px;
-    color: #4e6eb9 !important;
-     border: 1px solid #1e293b  !important;
-      background-color: #1e293b  !important;
+    color: white !important;
+     /* border: 1px solid #1e293b  !important;
+      background-color: #1e293b  !important; */
+    border: none !important;
+    background-color: none !important;
+    stroke: white !important;
 }
 .btn:not(.btn-md):not(.btn-lg), div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg):hover {
     padding: 4px 8px;
-    color: #4e6eb9 !important;
+    color: white !important;
     border: 1px solid #1e293b  !important;
 }
 row, .dialog-assignment-row, .form-section .section-body, .form-dashboard-section .section-body {
@@ -898,3 +902,51 @@ default-state .empty-state[data-v-be90f500] {
     font-size: var(--text-sm);
     color: #4e6eb9 !important;
 }
+.form-builder-container .form-sidebar[data-v-83aa7031] .section-columns.has-one-column .field input.form-control, .form-builder-container .form-sidebar[data-v-83aa7031] .section-columns.has-one-column .field .signature-field, .form-builder-container .form-main[data-v-83aa7031] .section-columns.has-one-column .field input.form-control, .form-builder-container .form-main[data-v-83aa7031] .section-columns.has-one-column .field .signature-field {
+    width: calc(50% - 19px);
+    border: 1px solid #0f172a !important;
+}
+.signature-field[data-v-c1582adf]::before {
+    content: "";
+    background-color: #1e293b;
+    width: 70%;
+    height: 2px;
+    margin-top: 150px;
+}
+.list-paging-area .btn-group, .footnote-area .btn-group {
+    border: 1px solid #1e293b;
+    border-radius: var(--border-radius);
+}
+.notifications-list .notification-list-body .notification-null-state .subtitle {
+    margin-top: var(--margin-sm);
+    font-size: var(--text-base);
+    font-weight: var(--weight-regular);
+    letter-spacing: 0.02em;
+    color: white;
+}
+.notifications-list .notification-list-body .notification-null-state .title {
+    margin-top: var(--margin-lg);
+    font-size: var(--text-base);
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.015em;
+    color: white;
+}
+.notifications-list .notification-item-tabs .notifications-category {
+    padding: var(--padding-md) 0px;
+    margin-bottom: -1px;
+    margin-right: var(--margin-lg);
+    color: white;
+    font-weight: var(--weight-medium);
+    cursor: pointer;
+}
+.notifications-list .notification-item-tabs .notifications-category.active {
+    color: white;
+    border-bottom: 1px solid white;
+}
+.layout-main-section .msg-box p {
+    font-size: var(--text-base);
+    font-weight: var(--weight-regular);
+    letter-spacing: 0.02em;
+    color: white !important;
+}
+

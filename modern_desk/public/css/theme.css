@@ -336,7 +336,7 @@
 /* Other Components */
 [data-theme=modern_ui_theme] input[type=checkbox] {
     appearance: none;
-    width: 18px;
+    width: 20px !important;
     height: 18px;
    background: #0f172a;
     border: 1px solid white;
